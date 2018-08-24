@@ -1,0 +1,205 @@
+/*****BASE STYLES*****/
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+
+/*****GRID*****/
+
+.full-width {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.half-width {
+	width: 600px;
+	float: left;
+}
+
+.third-width {
+	width: 400px;
+	float: left;
+}
+
+/*****HEADER - HOME*****/
+#header {
+    height: 800px;
+    background: url(../img/hero-img.jpg) ;
+    background-size: cover;
+}
+
+#header h2, #header-projects h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 20px;
+	color: #f04c6e;
+}
+
+#header h2, #header-projects h2 span {
+	color: #404c5a;
+}
+
+#header nav, #header-projects nav {
+    float: right; 
+    padding-left: 20px;
+	font-weight: bold;
+}
+
+nav ul li{
+    display: inline-block;
+}
+
+nav ul li a {
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f9dc5c;
+    padding-left: 80px; 
+}
+
+#header h3 {
+    width: 1000px;
+    clear: both;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 72px;
+    line-height: 80px;
+    color: #404c5a;
+    padding: 20px 0;
+}
+
+#header h3 span {
+	padding-left: 75px;
+}
+
+/*****PORTFOLIO SECTION*****/
+
+#portfolio {
+	height: 1550px;
+	background-color: #011936;
+	text-align: center;
+}
+
+#portfolio .full-width {
+	padding-top: 60px;
+}
+
+#portfolio img, .text-area {
+	padding-top: 100px;
+}
+
+#portfolio h3 {
+	font-family: 'Abril Fatface', cursive;
+	color: #f9dc5c;
+	font-size: 24px;
+	width: 180px;
+	margin: 0 auto;
+}
+
+#portfolio h5 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 20px;
+	color: #f4fffd;
+}
+
+#portfolio h6 {
+	font-size: 18px;
+	color: #f04c6e;
+}
+
+#portfolio p {
+	font-size: 16px;
+	color: #f4fffd;
+	padding-left: 35px;
+}
+
+/*****ABOUT SECTION*****/
+
+#about {
+	height: 850px;
+	text-align: center;
+	background: url(../img/about-img.jpg);
+    background-size: cover;
+}
+
+#about .full-width {
+	padding-top: 55px;
+}
+
+#about h3 {
+	font-family: 'Abril Fatface', cursive;
+	color: #f9dc5c;
+	font-size: 24px;
+}
+	
+#about h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 22px;
+}
+
+#about p {
+	font-size: 20px;
+	color: #011936;
+}
+
+#lower-text {
+	padding-top: 450px;
+	padding-left: 385px;
+}
+
+/*****CONTACT SECTION*****/
+
+#contact {
+	background-color: #011936;
+	height: 400px;
+}
+
+#contact .full-width {
+	text-align: center;
+	padding: 50px 0 50px;
+}
+
+#contact h3 {
+	color: #f9dc5c;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 24px;
+	text-align: center;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+#contact ul li {
+     display: inline-block;
+}
+
+#contact ul img {
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 75px;
+}
+
+#contact .email a{
+    text-decoration: none;
+    color: #f04c6e;
+    font-weight: bold;
+    font-size: 28px;
+	padding-right: 20px;
+}
+
+/*****FOOTER SECTION*****/
+
+#footer {
+	height: 600px;
+    background: url(../img/footer-img.jpg);
+    background-size: cover;
+}
+	
+
+/*****HEADER - PROJECTS*****/
+
+#header-projects {
+	background: url(../img/hero-img.jpg) ;
+    background-size: cover;
+	height: 100px;
+}
