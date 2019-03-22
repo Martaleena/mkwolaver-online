@@ -96,138 +96,230 @@ textarea {
 /*****BASE STYLES*****/
 
 body {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 	font-family: 'Lato', sans-serif;
+	background-color: #f5f5f0;
 }
 
-
-/*****GRID*****/
-
-.full-width {
-	width: 1200px;
-	margin: 0 auto;
+.container {
+	max-width: 1200px;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
-.half-width {
-	width: 600px;
-	float: left;
+.header, .about, .contact, .footer, #portfolio {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
 }
 
-.third-width {
-	width: 400px;
-	float: left;
-}
 
 /*****HEADER - HOME*****/
-#header {
-    height: 800px;
-    background: url(../img/hero-img.jpg) ;
-    background-size: cover;
+.header {
+    height: auto;
 }
 
-#header h2, #header-projects h2 {
+.header h2, #header-projects h2 {
 	font-family: 'Abril Fatface', cursive;
-	font-size: 20px;
+	font-size: 1.25em;
 	color: #f04c6e;
 }
 
-#header h2, #header-projects h2 span {
+.header h2 span, #header-projects h2 span {
 	color: #404c5a;
 }
 
-#header nav, #header-projects nav {
-    float: right; 
+.header nav { 
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-weight: bold;
 }
 
-nav ul li{
-    display: inline-block;
+nav ul {
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	list-style: none;
+	padding: 10px 0;
+	margin: 0;
+}
+
+nav ul li {
+	padding: 10px 0;
 }
 
 nav ul li a {
     text-transform: lowercase;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.125em;
     color: #f9dc5c;
-    padding-left: 1.25em; 
 	font-weight: bold;
 }
 
-#header h3 {
-    width: 1000px;
-    clear: both;
-    font-family: 'Abril Fatface', cursive;
-    font-size: 72px;
-    line-height: 80px;
-    color: #404c5a;
-    padding: 20px 0;
+.header .hero {
+	background: url(../img/hero-img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 20px 0;
+	padding-top: 40px;
+	padding-bottom: 90px;
 }
 
-#header h3 span {
-	padding-left: 75px;
+.header h4 {
+    display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-flow: row wrap;
+	font-family: 'Abril Fatface', cursive;
+    color: #404c5a;
+	font-size: 1.5em;
+	margin: 0;
+	padding-bottom: 60px;
+	padding-left: 5px;
+}
+
+.header h4 span {
+	padding-left: 45px;
+	color: #f04c6e;
+}
+
+
+/*****ABOUT SECTION*****/
+
+.about {
+	height: auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	margin-bottom: 20px;
+}
+
+.about h3 {
+	font-family: 'Abril Fatface', cursive;
+	color: #f9dc5c;
+	font-size: 1.25em;
+}
+
+.about p {
+	font-size: 1.25em;
+	color: #011936;
+}
+
+
+/*****CONTACT SECTION*****/
+
+.contact {
+	background-color: #011936;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.contact h3 {
+	color: #f9dc5c;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+.contact ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+    list-style: none;
+	padding: 0;
+}
+
+.contact ul img {
+	padding: 20px 0;
+}
+
+.contact .email a{
+    text-decoration: none;
+    color: #f04c6e;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+/*****FOOTER SECTION*****/
+
+.footer {
+	height: auto;
+    background: url(../img/footer-img.jpg);
+    background-size: cover;
 }
 
 /*****SERVICES SECTION*****/
 
 #services {
-	height: 45em;
+	height: auto;
 	background-color: #011936;
 	text-align: center;
-}
-
-#services .full-width {
-	padding: 4em auto 2em;
-}
-
-#services img, .text-area {
-	padding-top: 100px;
+	padding-bottom: 20px;
 }
 
 #services i {
 	color: #f04c6e;
 	font-size: 3em;
-	padding: 1.5em auto 1.5em;
+	padding: 20px 0 10px 0;
 }
 
 #services h3 {
 	font-family: 'Abril Fatface', cursive;
 	color: #f9dc5c;
-	font-size: 24px;
-	padding-top: 2em;
+	font-size: 1.5em;
+	padding: 32px 0;
 	text-align: center;
 	margin: 0 auto;
 }
 
 #services h5 {
 	font-family: 'Abril Fatface', cursive;
-	font-size: 20px;
+	font-size: 1.25em;
 	color: #f4fffd;
 }
 
 #services h6 {
-	font-size: 18px;
+	font-size: 1.125em;
 	color: #f04c6e;
 }
 
 #services p {
-	font-size: 16px;
+	font-size: 1em;
 	color: #f4fffd;
-	padding-left: 2em;
-	padding-bottom: 2em;
+	padding: 0 10px;
 }
 #button {
-	clear: both;
-	width: 10em;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #f04c6e;
 	border: none;
-	padding: 1em 2em;
-	margin: 2em 0 0 31em;
+	padding: 10px 20px;
+	margin: 40px 15px 20px 15px;
 }
 #button a {
 	color: #f4fffd;
 	font-weight: bold;
 	font-family: 'Abril Fatface', cursive;
-	font-size: 24px;
+	font-size: 1.5em;
 	text-decoration: none;
 	text-align: center;
 	display: inline-block;
@@ -235,113 +327,440 @@ nav ul li a {
 	
 /*****PORTFOLIO SECTION*****/
 
+
 #portfolio {
-	height: 1550px;
+	height: auto;
 	background-color: #011936;
 	text-align: center;
 }
 
-#portfolio .full-width {
-	padding-top: 60px;
+#portfolio ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
 }
 
-#portfolio img, .text-area {
-	padding-top: 100px;
+#portfolio ul li {
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#portfolio img {
+	height: auto;
+	max-width: 90%;
+	margin: 20px 5px 0 5px;
+}
+
+#portfolio .text-area {
+	padding: 0 15px;
 }
 
 #portfolio h3 {
 	font-family: 'Abril Fatface', cursive;
 	color: #f9dc5c;
-	font-size: 24px;
-	width: 180px;
+	font-size: 1.5em;
 	margin: 0 auto;
+	padding: 30px 0;
 }
 
 #portfolio h5 {
 	font-family: 'Abril Fatface', cursive;
-	font-size: 20px;
+	font-size: 1.25em;
 	color: #f4fffd;
+	text-decoration: none;
 }
 
 #portfolio h6 {
-	font-size: 18px;
+	font-size: 1.125em;
 	color: #f04c6e;
 }
 
 #portfolio p {
-	font-size: 16px;
+	font-size: 1em;
 	color: #f4fffd;
-	padding-left: 35px;
+}
+	
+
+/*****HEADER - PROJECTS*****/
+
+#header-projects {
+	background: url(../img/hero-img.jpg) ;
+    background-size: cover;
+	height: auto;
+	width: 100%;
+	padding-bottom: 200px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+#header-projects .page-top-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-flow: row wrap;
+}
+
+#header-projects h2 {
+	font-size: 1em;
+}
+
+#header-projects h2 span {
+	font-size: .8em
+}
+
+
+/*****TABLET STYLES*****/
+
+@media (min-width: 768px) {
+	
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0;
+	display: flex;
+	justify-content: flex-start;
+}
+
+
+
+.third-width {
+	width: 33%;
+	float: left;
+}
+
+.header {
+    height: auto;
+	display: flex;
+	justify-content: flex-start;
+    background: url(../img/hero-img.jpg) ;
+    background-size: cover;
+	background-repeat: no-repeat;
+	padding-bottom: 500px;
+}
+
+.header .top-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-flow: row wrap;
+}
+
+.header h2, #header-projects h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1em;
+	color: #f04c6e;
+	padding-left: 20px;
+}
+
+.header nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding-left: 100px;
+}
+
+.header nav ul, #header-projects nav {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 60px;
+}
+
+.header nav ul li{
+    display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.header nav ul li a {
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 1.125em;
+    color: #f9dc5c;
+    padding-left: 1.25em; 
+	font-weight: bold;
+}
+
+.header .hero {
+	background: none;
+	margin: 0;
+	padding: 20px 0 0 20px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 70%;
+}
+
+.header h4 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.25em;
+    color: #404c5a;
+	padding-left: 40px;
+}
+
+.header h4 span {
+	padding-left: 40px;
+}
+
+.about {
+	padding: 20px 0;
+}
+
+.contact ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+    list-style: none;
+}
+
+.contact ul li {
+	padding-right: 20px;
+}
+
+/******SERVICES SECTION*****/
+
+#services {
+	height: auto;
+	background-color: #011936;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+#header-projects {
+	padding: 0;
+}
+
+#header-projects h2 {
+	font-size: 1.5em;
+}
+
+#header-projects .page-top-section {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 60px 0 20px;
+	padding: 10px 0;
+}
+
+#header-projects nav {
+	font-weight: bold;
+	font-size: 1.75em;
+	padding: 10px 0 0 200px;
+}
+
+.page-nav ul {
+	padding: 0;
+}
+
+}
+
+
+/*****TABLET LANDSCAPE STYLES*****/
+@media (min-width: 1000px) {
+
+.header nav {
+	padding-left: 350px;
+}
+
+#services .services-list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#services .half-width {
+	width: 50%;
+}
+
+#button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #f04c6e;
+	border: none;
+	padding: 16px 30px;
+}
+}
+
+/******TABLET LANDSCAPE STYLES 2*****/
+@media (min-width: 1145px) {
+	
+.header nav {
+	padding-left: 475px;
+}
+
+.header .hero {
+	padding-left: 420px;
+}
+}
+
+/*****DESKTOP STYLES*****/
+
+@media (min-width: 1200px) {
+
+/*****GRID*****/
+
+.container {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0;
+}
+
+.full-width {
+	width: 100%;
+}
+
+
+
+.third-width {
+	width: 33%;
+	float: left;
+}
+
+/*****HEADER - HOME*****/
+.header {
+    height: auto;
+    background: url(../img/hero-img.jpg) ;
+    background-size: cover;
+	padding-bottom: 500px;
+}
+
+.header .top-section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-flow: row wrap;
+}
+
+.header h2, #header-projects h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 2em;
+	color: #f04c6e;
+	padding-left: 20px;
+}
+
+.header nav {
+	padding-left: 150px;
+}
+
+.header nav ul {
+    float: right;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	font-weight: bold;
+	padding-top: 10px;
+}
+
+.header nav ul li{
+    display: flex;
+	justify-content: space-between;
+	flex-flow: row wrap;
+}
+
+.header nav ul li a {
+    text-transform: lowercase;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #f9dc5c;
+    padding-left: 1.25em; 
+	font-weight: bold;
+}
+
+.header .hero {
+	background: none;
+	margin: 0;
+	padding-left: 150px;
+}
+
+.header h4 {
+    width: 1000px;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 4em;
+    color: #404c5a;
+    padding: 20px 0;
+
+}
+
+.header h4 span {
+	padding-left: 75px;
 }
 
 /*****ABOUT SECTION*****/
 
-#about {
-	height: 850px;
+.about {
+	height: auto;
 	text-align: center;
-	background: url(../img/about-img.jpg);
-    background-size: cover;
+	background-color: #f5f50;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	padding: 20px 0;
 }
 
-#about .full-width {
-	padding-top: 55px;
-}
-
-#about h3 {
+.about h3 {
 	font-family: 'Abril Fatface', cursive;
 	color: #f9dc5c;
-	font-size: 24px;
+	font-size: 1.5em;
 }
 	
-#about h2 {
+.about h2 {
 	font-family: 'Abril Fatface', cursive;
-	font-size: 22px;
+	font-size: 1.35px;
+	padding: 5px 0;
 }
 
-#about p {
-	font-size: 20px;
+.about p {
+	font-size: 1.25em;
 	color: #011936;
-}
-
-#lower-text {
-	padding-top: 450px;
-	padding-left: 385px;
+	padding: 0 20px;
 }
 
 /*****CONTACT SECTION*****/
 
-#contact {
+.contact {
 	background-color: #011936;
-	height: 400px;
+	height: auto;
 }
 
-#contact .full-width {
+.contact .full-width {
 	text-align: center;
 	padding: 50px 0 50px;
 }
 
-#contact h3 {
+.contact h3 {
 	color: #f9dc5c;
 	font-family: 'Abril Fatface', cursive;
 	font-size: 24px;
 	text-align: center;
 }
 
-#contact ul {
+.contact ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
     list-style: none;
 }
 
-#contact ul li {
-     display: inline-block;
+.contact ul li {
+	padding-right: 20px;
 }
 
-#contact ul img {
-	padding-top: 20px;
-	padding-left: 10px;
-	padding-right: 75px;
-}
-
-#contact .email a{
+.contact .email a{
     text-decoration: none;
     color: #f04c6e;
     font-weight: bold;
@@ -356,14 +775,127 @@ nav ul li a {
     background: url(../img/footer-img.jpg);
     background-size: cover;
 }
-	
 
-/*****HEADER - PROJECTS*****/
+/*****SERVICES SECTION*****/
+
+#services {
+	height: auto;
+	background-color: #011936;
+	text-align: center;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: row wrap;
+}
+
+#services .services-list {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#services .half-width {
+	width: 50%;
+}
+
+#services i {
+	color: #f04c6e;
+	font-size: 3em;
+	padding: 24px 0;
+}
+
+#services h3 {
+	font-family: 'Abril Fatface', cursive;
+	color: #f9dc5c;
+	font-size: 1.5em;
+	padding-top: 32px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+#services h5 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1.25em;
+	color: #f4fffd;
+}
+
+#services h6 {
+	font-size: 1.125em;
+	color: #f04c6e;
+}
+
+#services p {
+	font-size: 1em;
+	color: #f4fffd;
+	padding: 0 0 30px 30px;
+}
+#button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #f04c6e;
+	border: none;
+	padding: 16px 30px;
+}
+#button a {
+	color: #f4fffd;
+	font-weight: bold;
+	font-family: 'Abril Fatface', cursive;
+	font-size: 1.5em;
+	text-decoration: none;
+	text-align: center;
+}
+
+/****PROJECTS SECTION*****/
+
+#portfolio ul li {
+	display: inline block;
+}
+
+#portfolio ul li:nth-child(odd) .example-img{
+	float: left;
+	padding-right: 2em;
+
+}
+#portfolio ul li:nth-child(even) .example-img{
+	float: right;
+	padding-left: 2em;
+}
+
+.project-example {
+	overflow: auto;
+}
+
+.project-example .example-img {
+	width: 45%;
+	float: left;
+}
+
+.project-example .text-area {
+	width: 45%;
+	float: left;
+}
+
+/****HEADER PROJECTS*****/
 
 #header-projects {
-	background: url(../img/hero-img.jpg) ;
-    background-size: cover;
-	height: 10em;
+	padding: 0;
+}
+
+#header-projects .page-top-section {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 60px 0 20px;
+}
+
+#header-projects nav {
+	font-weight: bold;
+	font-size: 1.75em;
+	padding: 10px 0 0 200px;
+}
+		
 }
 
  /* ==========================================================================
